@@ -1,4 +1,4 @@
-# Template Repository for Databricks Projects with a Python Pacakge
+# Template Repository for Python Projects
 
 This is a template repository intended to be a starting point for Python projects. The repository is equipped with the necessary boilerplate for:
 
