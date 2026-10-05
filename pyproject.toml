@@ -17,6 +17,7 @@ packages = ["src/my_project"]
 docs = [
     "ipykernel>=7.2.0",
     "ipython>=9.13.0",
+    "myst-parser>=5.1.0",
     "nbsphinx>=0.9.8",
     "pandoc>=2.4",
     "sphinx>=9.1.0",

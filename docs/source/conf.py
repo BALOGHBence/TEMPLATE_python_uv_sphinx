@@ -14,18 +14,28 @@ author = 'Bence Balogh'
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = [
+    "myst_parser",
     "nbsphinx",
     "sphinx_copybutton",
 ]
 
 templates_path = ['_templates']
-exclude_patterns = ["_build", ".DS_Store"]
+exclude_patterns = ["_build", ".DS_Store", "**.ipynb_checkpoints"]
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
 html_theme = "sphinx_rtd_theme"
 html_static_path = ['_static']
+
+# -- Options for MyST ------------------------------------------------------
+# https://myst-parser.readthedocs.io/en/latest/configuration.html
+
+myst_enable_extensions = [
+    "colon_fence",
+    "deflist",
+    "dollarmath",
+]
 
 # -- Options for nbsphinx -------------------------------------------------
 # https://nbsphinx.readthedocs.io/en/0.9.8/
